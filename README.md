@@ -1,5 +1,7 @@
 # javascript-array-methods-all
-Javascript tüm array methodları tanımları ve kullanım örnekleri. Bu markdown dosyası github.com/burakkrt tarafından hazırlanmıştır.
+Bu belge Javascript 'in tüm temel array metotlarını, bu metotların tanımlarını ve kullanım örneklerini içermektedir. 
+Bu markdown dosyası github.com/burakkrt tarafından hazırlanmıştır.
+
 
 # Array Methods
 
