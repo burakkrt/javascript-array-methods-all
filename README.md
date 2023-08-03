@@ -581,3 +581,60 @@ let date = new Date();
 console.log(date) //return "2023-07-31T06:39:18.979Z"
 console.log(date.toLocaleString('tr-TR')) //return "31.07.2023 09:39:18"
 ```
+
+### pop()
+
+Bu yöntem, dizinin sonundaki elemanı kaldırır ve kaldırılan elemanı döndürür. Diziyi değiştirir.
+
+```jsx
+const myArray = [1, 2, 3, 4, 5];
+
+const removedElement = myArray.pop();
+console.log(removedElement); // 5 (kaldırılan eleman)
+console.log(myArray); // [1, 2, 3, 4] (kalan dizinin son hali)
+
+const emptyArray = [];
+console.log(emptyArray.pop()); // undefined
+```
+
+### shift()
+
+Bu yöntem, dizinin başındaki elemanı kaldırır ve kaldırılan elemanı döndürür. Dizi üzerinde değişiklik yapar.
+
+```jsx
+const myArray = [1, 2, 3, 4, 5];
+
+console.log(myArray.shift()); // 1 (kaldırılan eleman)
+console.log(myArray); // [2, 3, 4, 5] (kalan dizinin son hali)
+
+console.log(emptyArray.shift()); // undefined
+```
+
+### push()
+
+Bu yöntem, dizinin sonuna bir veya daha fazla eleman ekler. Dizi üzerinde değişiklik yapar ve yeni uzunluğunu döndürür.
+
+```jsx
+const myArray = [1, 2, 3, 4];
+console.log(myArray.push(5, 6)); // 6 (yeni dizi uzunluğu)
+console.log(myArray); // [1, 2, 3, 4, 5, 6] (kalan dizinin son hali)
+
+const myArray = [1, 2];
+const additionalItems = [3, 4, 5];
+
+myArray.push(...additionalItems);
+console.log(myArray); // [1, 2, 3, 4, 5]
+```
+
+### unshift()
+
+Bu yöntem, diziye yeni eleman(lar) ekler ve dizinin başındaki indeksleri kaydırarak elemanları yerine yerleştirir. Dizi üzerinde değişiklik yapar.
+
+```jsx
+const myArray = [3, 4, 5];
+console.log(myArray.unshift(1, 2)); // [1, 2, 3, 4, 5]
+
+//array eklenebilir
+const additionalItems = [0, -1];
+myArray.unshift(...additionalItems);
+```
